@@ -1,0 +1,6980 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.promo-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    padding-top:72px;
+}
+
+.top-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 72px;
+
+    background: #8ee52c;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+}
+
+.top-navbar-content{
+    width:87%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+/* Top Footer */
+
+.footer-top {
+    width: 100%;
+    min-height: 390px;
+    padding: 58px 28px 48px;
+    display: grid;
+    grid-template-columns:
+        1.05fr
+        1fr
+        1.05fr
+        2.25fr
+        1.45fr;
+    column-gap: 55px;
+    box-sizing: border-box;
+}
+
+/* Footer Columns */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-column h3 {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 27px;
+}
+
+.footer-column a {
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    margin-bottom: 23px;
+    white-space: nowrap;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Long fourth column */
+
+.footer-envato-links a {
+    white-space: normal;
+}
+
+/* Envato Brand */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+}
+
+.envato-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 77px;
+    white-space: nowrap;
+}
+
+.envato-icon {
+    color: #82d044;
+    font-size: 31px;
+    font-weight: bold;
+    transform: rotate(-35deg);
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.envato-name {
+    color: #f4f4f4;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.market-name {
+    color: #e4e4e4;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+/* Statistics */
+
+.footer-stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 62px;
+}
+
+.stat-box {
+    min-width: 98px;
+}
+
+.stat-box h2 {
+    color: #e8e8e8;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    white-space: nowrap;
+}
+
+.stat-box p {
+    color: #9c9c9c;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Bottom Footer */
+
+.footer-bottom {
+    width: 100%;
+    min-height: 180px;
+    border-top: 1px solid #414141;
+    padding: 29px 27px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-bottom: 15px;
+}
+
+.footer-menu a {
+    color: #e5e5e5;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-left p {
+    color: #a6a6a6;
+    font-size: 15px;
+    margin: 0 0 13px;
+    line-height: 1.35;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-top: 61px;
+}
+
+.social-icons a {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #555555;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #8b8b8b;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1200px) {
+
+    .footer-top {
+        grid-template-columns:
+            1fr
+            1fr
+            1fr
+            1.8fr;
+        row-gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .envato-logo {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        padding: 45px 25px;
+        gap: 40px 25px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 30px 25px;
+    }
+
+    .social-icons {
+        padding-top: 30px;
+    }
+
+    .footer-menu {
+        gap: 18px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}/* =====================================
+   COMMON CSS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =====================================
+   1. GREEN TOP NAVBAR
+===================================== */
+
+.top-navbar {
+    width: 100%;
+    background-color: #a8e66b;
+    padding: 12px 20px;
+}
+
+.top-navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.top-navbar-text {
+    margin: 0;
+    color: #111111;
+    font-size: 15px;
+}
+
+.start-button {
+    background-color: #222222;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 28px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   2. BLACK ENVATO NAVBAR
+===================================== */
+
+.envato-navbar {
+    width: 100%;
+    background-color: #262626;
+    padding: 17px 30px;
+}
+
+.envato-navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.envato-market-logo {
+    color: white;
+    font-size: 23px;
+}
+
+.envato-leaf {
+    color: #82b440;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.envato-right-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.envato-right-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.envato-right-menu a:hover {
+    color: #82b440;
+}
+
+.cart-icon {
+    color: white;
+    font-size: 18px;
+}
+
+.cart-number {
+    background-color: #82b440;
+    color: white;
+
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   3 AND 4 NAVBAR PARENT
+===================================== */
+
+.navigation-section {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =====================================
+   3. DARK NAVBAR
+===================================== */
+
+.dark-navbar {
+    width: 100%;
+    height: 58px;
+
+    background-color: #333333;
+
+    padding-left: 30px;
+    padding-right: 220px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.dark-navbar-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    white-space: nowrap;
+}
+
+.dark-navbar-menu a {
+    color: #bdbdbd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.dark-navbar-menu a:hover {
+    color: white;
+}
+
+.dark-navbar-menu .dark-active {
+    color: white;
+}
+
+.dark-navbar-menu .ai-assets {
+    color: white;
+
+    border-left: 1px solid #777777;
+
+    padding-left: 25px;
+}
+
+
+/* =====================================
+   THEMEFOREST BUTTON
+===================================== */
+
+.themeforest-button {
+    position: absolute;
+
+    right: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 150px;
+    height: 56px;
+
+    background-color: #2f2f2f;
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    z-index: 10;
+}
+
+
+.themeforest-icon {
+    color: #82b440;
+    font-size: 20px;
+}
+
+/* =====================================
+   4. WHITE NAVBAR
+===================================== */
+
+.white-navbar {
+    width: 100%;
+
+    height: 58px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #dddddd;
+
+    padding-left: 30px;
+
+    padding-right: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.white-navbar-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    white-space: nowrap;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.white-navbar-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.white-navbar-menu a {
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: #555555;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    border-bottom: 3px solid transparent;
+}
+
+.white-navbar-menu a:hover {
+    color: black;
+}
+
+.white-navbar-menu .white-active {
+    color: black;
+
+    font-weight: bold;
+
+    border-bottom: 3px solid #82b440;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+    .top-navbar-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+
+    .envato-navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .envato-market-logo {
+        font-size: 18px;
+    }
+
+
+    .envato-right-menu {
+        gap: 10px;
+    }
+
+
+    .envato-right-menu a {
+        font-size: 11px;
+    }
+
+
+    .dark-navbar {
+        padding-left: 15px;
+        padding-right: 140px;
+    }
+
+
+    .white-navbar {
+        padding-left: 15px;
+        padding-right: 140px;
+    }
+
+
+    .themeforest-button {
+        width: 125px;
+
+        right: 10px;
+
+        font-size: 12px;
+    }
+
+}
+
+/* =====================================
+   WEBSITE TEMPLATES SECTION
+===================================== */
+
+.website-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.website-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 18px 36px 28px;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb-text {
+    color: #555555;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+.breadcrumb-text span {
+    margin-left: 10px;
+
+    margin-right: 10px;
+}
+
+
+/* Heading and Search */
+
+.heading-search {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.heading-content {
+    width: 65%;
+}
+
+.heading-content h1 {
+    color: #303b47;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+.heading-content p {
+    color: #4d5965;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* Search Box */
+
+.search-box {
+    width: 40%;
+
+    height: 60px;
+
+    display: flex;
+
+    border: 1px solid #d4d4d4;
+
+    background-color: white;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding-left: 20px;
+
+    font-size: 16px;
+
+    color: #555555;
+}
+
+.search-box button {
+    width: 60px;
+
+    border: none;
+
+    background-color: #6b9d25;
+
+    color: white;
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   ALL CATEGORIES SECTION
+===================================== */
+
+.categories-section {
+    width: 100%;
+
+    background-color: #f5f6f7;
+
+    padding-top: 55px;
+
+    padding-bottom: 60px;
+}
+
+.categories-container{
+    width:96%;
+    max-width:1600px;
+    margin:auto;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+    padding:30px 40px 20px;
+    box-sizing:border-box;
+}
+
+.category-footer{
+    border-top:1px solid #e5e5e5;
+    margin-top:25px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-links{
+    display:flex;
+    gap:35px;
+}
+
+.footer-links a,
+.show-more a{
+    text-decoration:none;
+    color:#46515d;
+    font-weight:600;
+}
+
+.show-more{
+    margin:0 auto;
+}
+
+
+/* Category Heading */
+
+.category-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-bottom: 1px solid #d7d7d7;
+
+    padding-bottom: 30px;
+}
+
+.category-icon {
+    width: 32px;
+
+    height: 32px;
+
+    border: 2px solid #555555;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 18px;
+}
+
+.category-heading h2 {
+    color: #45515e;
+
+    font-size: 20px;
+
+    margin: 0;
+}
+
+
+/* Category Grid */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+
+/* Category Column */
+
+.category-column a{
+    display:block;
+    color:#56616d;
+    text-decoration:none;
+    font-size:15px;
+    padding:18px 0;
+    border-bottom:1px solid #e5e5e5;
+    transition:.3s;
+}
+
+.category-column a:hover{
+    color:#7aa93c;
+}
+
+.category-column a:hover {
+    color: #6b9d25;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+.website-container,
+.categories-container {
+    width: 98%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.categories-container {
+    padding: 15px 20px;
+}
+
+
+    .heading-search {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .heading-content {
+        width: 100%;
+    }
+
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    .categories-container {
+        width: 92%;
+    }
+
+
+    .category-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    column-gap:40px;
+    row-gap:0;
+    margin-top:25px;
+}
+.category-column{
+    display:flex;
+    flex-direction:column;
+}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .heading-content h1 {
+        font-size: 27px;
+    }
+
+
+    .category-grid {
+        grid-template-columns:
+        1fr;
+    }
+
+}
+
+/* =====================================
+   WEBSITE OFFERS SECTION
+===================================== */
+
+.offers-section{
+    width:100%;
+    background:#e7e8e9;
+    padding:35px 0;
+}
+
+.offers-container{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:0 40px;
+
+    display:grid;
+    grid-template-columns:340px 1fr 1fr 1fr;
+
+    gap:30px;
+
+    box-sizing:border-box;
+    align-items:stretch;
+}
+
+
+/* =====================================
+   LEFT SALE CONTENT
+===================================== */
+
+.sale-content{
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;   /* Vertical center */
+    align-items:flex-start;   /* Left alignment */
+
+    padding-left:10px;
+}
+
+
+.sale-button {
+    background-color: #6b9824;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 32px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.sale-button:hover {
+    background-color: #587f1d;
+}
+
+
+/* =====================================
+   PRODUCT CARD
+===================================== */
+
+.product-card,
+.subscription-card{
+    width:100%;
+    height:100%;
+}
+
+/* Product Image */
+
+.product-image{
+    width:100%;
+    height:220px;   /* Brian image height */
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+.green-card{
+    height:390px;
+
+    background:#8ee52d;
+
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-sizing:border-box;
+}
+
+/* ZANNA Image */
+
+/* =====================================
+   ZANNA IMAGE
+===================================== */
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+}
+
+.zanna-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.zanna-image h2 {
+    font-size: 30px;
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+}
+
+
+.zanna-image p {
+    font-size: 8px;
+
+    color: #cccccc;
+}
+
+
+/* Product Tag */
+
+.product-tag {
+    position: absolute;
+
+    top: 10px;
+
+    left: 10px;
+
+    z-index: 2;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+
+/* Wedding Image */
+
+.wedding-image{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(90deg,#b39147,#e5e0d3);
+}
+
+
+.wedding-title {
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+
+/* =====================================
+   PRODUCT DETAILS
+===================================== */
+
+.product-details{
+    flex:1;
+    padding:18px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+.product-details h3 {
+    color: #47525d;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+
+    margin-bottom: 4px;
+}
+
+
+.author {
+    color: #7c858d;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.price {
+    margin-bottom: 8px;
+}
+
+
+.old-price {
+    color: #555555;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-decoration: line-through;
+
+    margin-right: 5px;
+}
+
+
+.new-price {
+    color: #5f8e25;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* Product Bottom */
+
+.product-bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: #e5a800;
+
+    font-size: 17px;
+}
+
+
+.review {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+.sales {
+    color: #7a838c;
+
+    font-size: 12px;
+
+    margin: 4px 0 0;
+}
+
+
+/* Product Buttons */
+
+.product-buttons {
+    display: flex;
+
+    gap: 5px;
+}
+
+
+.cart-button {
+    width: 42px;
+
+    height: 42px;
+
+    background-color: white;
+
+    border:
+    1px solid #d1d6d9;
+
+    cursor: pointer;
+}
+
+
+.preview-button {
+    height: 42px;
+
+    background-color: white;
+
+    color: #31627d;
+
+    border:
+    1px solid #7aa0b5;
+
+    padding:
+    0 15px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   GREEN SUBSCRIPTION CARD
+===================================== */
+
+.subscription-card{
+    background:#8ee52c;
+    border-radius:4px;
+
+    padding:35px 28px;
+
+    display:flex;
+    flex-direction:column;
+
+    box-sizing:border-box;
+
+    min-height:400px;   /* Increase height */
+}
+
+.subscription-card h2 {
+    color: #1f292f;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    line-height: 1.15;
+}
+
+
+.subscription-card p {
+    color: #253027;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-top: 15px;
+}
+
+.download-button{
+    margin-top:auto;
+
+    width:100%;
+
+    height:58px;
+
+    background:#202020;
+    color:#fff;
+
+    border:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-sizing:border-box;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 1200px) {
+
+    .offers-container {
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+
+    .sale-content {
+        padding: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .offers-container {
+        grid-template-columns:
+        1fr;
+    }
+
+
+    .sale-content {
+        text-align: center;
+    }
+
+
+    .subscription-card {
+        min-height: 350px;
+    }
+
+}
+
+
+/* Different Images */
+
+.avada-image {
+    background:
+        linear-gradient(
+            135deg,
+            #e7eee8,
+            #8cb99a
+        );
+}
+
+.woodmart-image {
+    background:
+        linear-gradient(
+            135deg,
+            #17251e,
+            #566a59
+        );
+}
+
+/* =====================================
+   BRIAN IMAGE
+===================================== */
+
+.brian-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.flatsome-image {
+    background:
+        linear-gradient(
+            135deg,
+            #24384a,
+            #70889a
+        );
+}
+
+.uncode-image {
+    background:
+        linear-gradient(
+            135deg,
+            #3c1570,
+            #1d0638
+        );
+}
+
+
+/* Content *//* =====================================
+   WEEKLY BESTSELLERS
+===================================== */
+
+.weekly-section {
+    background-color: #f4f5f6;
+    padding: 55px 0 60px;
+}
+
+.weekly-container {
+    width: 87%;
+    margin: auto;
+}
+
+
+/* Heading */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    color: #35414d;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-heading button{
+    background-color:#6b9d25;
+    color:#fff;
+    border:none;
+    width:100px;
+    height:42px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    white-space:nowrap;
+    flex-shrink:0;
+}
+
+
+/* 4 CARDS */
+
+.weekly-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.weekly-card {
+    width: 100%;
+
+    height: 325px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* IMAGE */
+
+.weekly-image {
+    height: 170px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+
+.weekly-content {
+    padding: 15px 18px;
+}
+
+.weekly-content h3 {
+    color: #46515c;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    margin-bottom: 6px;
+}
+
+.weekly-content > p {
+    color: #7b858e;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Price */
+
+.price {
+    color: #4c555d;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* Bottom */
+
+.card-bottom {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+}
+
+.rating {
+    color: #e9a900;
+
+    font-size: 16px;
+}
+
+.reviews {
+    color: #7b858e;
+
+    font-size: 11px;
+}
+
+.card-bottom p {
+    color: #7b858e;
+
+    font-size: 11px;
+
+    margin: 2px 0 0;
+}
+
+
+/* Buttons */
+
+.weekly-buttons {
+    display: flex;
+
+    gap: 5px;
+}
+
+.small-cart {
+    width: 42px;
+
+    height: 42px;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #d5d5d5;
+}
+
+.live-preview {
+    width: 108px;
+
+    height: 42px;
+
+    background-color: white;
+
+    color: #33627a;
+
+    border: 1px solid #77a2b7;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1100px) {
+
+    .weekly-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .weekly-cards {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+/* =====================================
+   WEEKLY BESTSELLERS - FINAL FIX
+===================================== */
+
+.weekly-section {
+    width: 100%;
+    padding: 55px 0 70px;
+    overflow: hidden;
+}
+
+.weekly-container {
+    width: 96%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* 4 cards exact ga page lopala */
+
+.weekly-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* Card */
+
+.weekly-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* Image */
+
+.weekly-image {
+    width: 100%;
+
+    height: 170px;
+
+    flex-shrink: 0;
+}
+
+
+/* Content */
+
+.weekly-content {
+    width: 100%;
+
+    min-width: 0;
+
+    flex: 1;
+
+    padding: 15px 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* Title */
+
+.weekly-content h3 {
+    width: 100%;
+
+    height: 38px;
+
+    font-size: 14px;
+
+    line-height: 19px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    margin-bottom: 6px;
+}
+
+
+/* Author */
+
+.weekly-content > p {
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    margin-bottom: 10px;
+}
+
+
+/* Price */
+
+.price {
+    margin-bottom: 8px;
+}
+
+
+/* Bottom */
+
+.card-bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+
+/* Rating */
+
+.card-bottom > div:first-child {
+    width: 100%;
+}
+
+.rating {
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+/* Buttons same row */
+
+.weekly-buttons {
+    width: 100%;
+
+    display: flex;
+
+    gap: 6px;
+}
+
+
+/* Cart */
+
+.small-cart {
+    width: 40px;
+
+    min-width: 40px;
+
+    height: 38px;
+
+    border: 1px solid #d5d5d5;
+
+    background-color: #f7f7f7;
+}
+
+
+/* Live Preview */
+
+.live-preview {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 38px;
+
+    border: 1px solid #77a2b7;
+
+    background-color: white;
+
+    color: #33627a;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1100px) {
+
+    .weekly-cards {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .weekly-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================
+   HOT UNDER $40 SECTION
+===================================== */
+
+.hot-section {
+    width: 100%;
+    background-color: #f4f5f6;
+
+    padding: 20px 0 60px;
+}
+
+
+/* Same 4-card layout */
+
+.hot-section .weekly-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* Same card size */
+
+.hot-section .weekly-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* Images */
+
+.hot-image-1 {
+    background:
+    linear-gradient(
+        135deg,
+        #e5e1ff,
+        #7764b8
+    );
+}
+
+.hot-image-2 {
+    background:
+    linear-gradient(
+        135deg,
+        #c5f000,
+        #263300
+    );
+}
+
+.hot-image-3 {
+    background:
+    linear-gradient(
+        135deg,
+        #25254a,
+        #ad80dc
+    );
+}
+
+.hot-image-4 {
+    background:
+    linear-gradient(
+        135deg,
+        #3d1833,
+        #753d50
+    );
+}
+
+
+/* Image text */
+
+.hot-section .weekly-image h2 {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 1100px) {
+
+    .hot-section .weekly-cards {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .hot-section .weekly-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================
+   NEW BESTSELLERS
+===================================== */
+
+.new-section {
+    width: 100%;
+    background-color: #f4f5f6;
+    padding: 20px 0 60px;
+}
+
+
+/* Same 4-card layout */
+
+.new-section .weekly-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* Same card size */
+
+.new-section .weekly-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* Different card images */
+
+.new-image-1 {
+    background:
+    linear-gradient(
+        135deg,
+        #151b1d,
+        #777777
+    );
+}
+
+.new-image-2 {
+    background:
+    linear-gradient(
+        135deg,
+        #0a3c93,
+        #23305d
+    );
+}
+
+.new-image-3 {
+    background:
+    linear-gradient(
+        135deg,
+        #23242d,
+        #8e46bc
+    );
+}
+
+.new-image-4 {
+    background:
+    linear-gradient(
+        135deg,
+        #ff4c18,
+        #4b190e
+    );
+}
+
+
+/* Image text */
+
+.new-section .weekly-image h2 {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1100px) {
+
+    .new-section .weekly-cards {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .new-section .weekly-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================
+   TOP CREATIVE ITEMS
+===================================== */
+
+.creative-section {
+    width: 100%;
+
+    background-color: #f4f5f6;
+
+    padding: 20px 0 65px;
+}
+
+
+/* 4 columns */
+
+.creative-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* NORMAL CARDS */
+
+.creative-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 328px;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* IMAGE */
+
+.creative-image {
+    width: 100%;
+
+    height: 170px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* CARD CONTENT */
+
+.creative-content {
+    padding: 13px 17px;
+
+    flex: 1;
+
+    min-height: 0;
+}
+
+
+.creative-content h3 {
+    margin: 0 0 5px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #3b4650;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.creative-content > p {
+    margin: 0 0 10px;
+
+    font-size: 13px;
+
+    color: #71808c;
+}
+
+
+.price {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #3c4650;
+
+    margin-bottom: 5px;
+}
+
+
+.creative-bottom {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+.rating {
+    color: #e6a900;
+
+    font-size: 17px;
+
+    letter-spacing: 0;
+}
+
+
+.reviews {
+    font-size: 12px;
+
+    color: #78838c;
+}
+
+
+.sales {
+    margin: 4px 0 0;
+
+    font-size: 12px;
+
+    color: #78838c;
+}
+
+
+/* BUTTONS */
+
+.creative-buttons {
+    display: flex;
+
+    gap: 5px;
+
+    align-items: center;
+}
+
+
+.creative-buttons button {
+    height: 43px;
+
+    border-radius: 2px;
+}
+
+
+.small-cart {
+    width: 42px;
+
+    border: 1px solid #d2d8dc;
+
+    background-color: white;
+
+    font-size: 16px;
+}
+
+
+.live-preview {
+    min-width: 107px;
+
+    padding: 0 13px;
+
+    border: 1px solid #28739a;
+
+    background-color: white;
+
+    color: #245c7b;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================
+   CARD 1 - NIMO
+===================================== */
+
+.nimo-image {
+    background:
+    linear-gradient(
+        115deg,
+        #050b08,
+        #162c1c,
+        #07100d
+    );
+}
+
+
+.image-title {
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.image-text {
+    position: absolute;
+
+    top: 48px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 15px;
+
+    line-height: 1.3;
+}
+
+
+.number-text {
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 60px;
+
+    color: #56e93c;
+
+    font-size: 42px;
+
+    font-weight: 800;
+}
+
+
+/* =====================================
+   CARD 2 - PIXORA
+===================================== */
+
+.pixora-image {
+    background:
+    linear-gradient(
+        135deg,
+        #e9472c,
+        #8c1e12
+    );
+}
+
+
+.pixora-logo {
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.pixora-text {
+    position: absolute;
+
+    top: 48px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+.pixora-number {
+    position: absolute;
+
+    bottom: 23px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: 800;
+}
+
+
+/* =====================================
+   GREEN ENVATO CARD
+===================================== */
+
+.envato-green-card {
+    width: 100%;
+
+    height: 328px;
+
+    min-width: 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 28px 25px 26px;
+
+    /* Screenshot lo unna bright green */
+
+    background-color: #8be833;
+}
+
+
+.green-content h2 {
+    margin: 0;
+
+    color: #202a24;
+
+    font-size: 26px;
+
+    line-height: 1.08;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+}
+
+
+.green-content p {
+    margin: 17px 0 0;
+
+    color: #202a24;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+}
+
+
+/* BLACK BUTTON */
+
+.green-button {
+    width: 100%;
+
+    height: 40px;
+
+    position: relative;
+
+    z-index: 2;
+
+    border: none;
+
+    background-color: #202020;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.green-button span {
+    margin-left: 12px;
+
+    font-size: 18px;
+}
+
+
+/* Bottom dots */
+
+.green-dots {
+    position: absolute;
+
+    bottom: -12px;
+
+    right: -10px;
+
+    width: 180px;
+
+    height: 42px;
+
+    opacity: 0.35;
+
+    background-image:
+    radial-gradient(
+        #1f3921 1px,
+        transparent 1px
+    );
+
+    background-size: 5px 5px;
+}
+
+
+/* =====================================
+   CARD 4 - NEXSAS
+===================================== */
+
+.nexsas-image {
+    background:
+    linear-gradient(
+        135deg,
+        #0b1d45,
+        #44206d
+    );
+}
+
+
+.nexsas-logo {
+    position: absolute;
+
+    top: 17px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.nexsas-text {
+    position: absolute;
+
+    top: 46px;
+
+    left: 18px;
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+.nexsas-number {
+    position: absolute;
+
+    bottom: 22px;
+
+    left: 85px;
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: 800;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 1100px) {
+
+    .creative-cards {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    .creative-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   TOP CREATIVE ITEMS - FINAL FIX
+========================================= */
+
+.creative-container{
+    width:96%;
+    max-width:1500px;
+    margin:0 auto;
+}
+
+.creative-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.creative-heading h2{
+    margin:0;
+    font-size:21px;
+    font-weight:700;
+    color:#35414d;
+}
+
+.creative-heading .view-all{
+    width:95px;
+    height:48px;
+    background:#6b9d25;
+    color:#fff;
+    border:none;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    white-space:nowrap;
+}
+.creative-section {
+    width: 100%;
+    background-color: #f5f6f7;
+    padding: 25px 0 70px;
+    overflow: hidden;
+}
+
+
+/* Main container */
+
+.creative-section .weekly-container {
+    width: 87%;
+    max-width: 1420px;
+    margin: auto;
+}
+
+
+/* Heading */
+
+.creative-section .section-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+
+.creative-section .section-heading h2 {
+    margin: 0;
+    color: #34414c;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.creative-section .section-heading button {
+    width: 82px;
+    height: 38px;
+    border: none;
+    background-color: #5d811e;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   4 ITEMS - SAME ROW
+========================================= */
+
+.creative-cards{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* =========================================
+   NORMAL 3 CARDS
+========================================= */
+
+.creative-card {
+    width: 100%;
+    min-width: 0;
+
+    height: 438px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border: 1px solid #dfe3e6;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Card image */
+
+.creative-image {
+    width: 100%;
+
+    height: 225px;
+
+    min-height: 225px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Card content */
+
+.creative-content {
+    width: 100%;
+
+    flex: 1;
+
+    min-height: 0;
+
+    padding: 16px 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+
+/* Product title */
+
+.creative-content h3 {
+    width: 100%;
+
+    margin: 0 0 7px;
+
+    color: #394550;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* Author */
+
+.creative-content > p {
+    margin: 0 0 13px;
+
+    color: #75818b;
+
+    font-size: 13px;
+}
+
+
+/* Price */
+
+.creative-content .price {
+    margin-bottom: 8px;
+
+    color: #3a4650;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* Bottom part */
+
+.creative-bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    min-width: 0;
+}
+
+
+/* Rating */
+
+.rating {
+    color: #e5a600;
+
+    font-size: 17px;
+
+    white-space: nowrap;
+}
+
+
+.reviews {
+    color: #77828b;
+
+    font-size: 12px;
+}
+
+
+.sales {
+    margin: 5px 0 0;
+
+    color: #77828b;
+
+    font-size: 12px;
+}
+
+
+/* Buttons */
+
+.creative-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+}
+
+
+.creative-buttons .small-cart {
+    width: 43px;
+
+    height: 43px;
+
+    padding: 0;
+
+    border: 1px solid #d2d8dc;
+
+    background-color: white;
+
+    font-size: 16px;
+}
+
+
+.creative-buttons .live-preview {
+    width: 108px;
+
+    height: 43px;
+
+    padding: 0;
+
+    border: 1px solid #28769d;
+
+    background-color: white;
+
+    color: #285e7b;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   GREEN CARD - SCREENSHOT SIZE
+========================================= */
+
+.envato-green-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 438px;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 42px 25px 25px;
+
+    background-color: #8be833;
+}
+
+
+/* Green card title */
+
+.green-content h2 {
+    margin: 0;
+
+    color: #17231b;
+
+    font-size: 27px;
+
+    line-height: 1.12;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Green card paragraph */
+
+.green-content p {
+    margin: 19px 0 0;
+
+    color: #18241b;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* Black button */
+
+.green-button {
+    width: 100%;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    z-index: 2;
+
+    border: none;
+
+    background-color: #202020;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.green-button span {
+    margin-left: 13px;
+
+    font-size: 19px;
+}
+
+
+/* Green card bottom dots */
+
+.green-dots {
+    position: absolute;
+
+    width: 200px;
+
+    height: 60px;
+
+    right: -10px;
+
+    bottom: -15px;
+
+    opacity: 0.35;
+
+    background-image:
+    radial-gradient(
+        #18341d 1px,
+        transparent 1px
+    );
+
+    background-size: 5px 5px;
+}
+
+
+/* =========================================
+   SCREEN SIZE FIX
+========================================= */
+
+@media screen and (max-width: 1250px) {
+
+    .creative-section .weekly-container {
+        width: 92%;
+    }
+
+    .creative-cards {
+        gap: 20px;
+    }
+
+    .creative-card,
+    .envato-green-card {
+        height: 420px;
+    }
+
+    .creative-image {
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .creative-buttons .live-preview {
+        width: 95px;
+    }
+
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1000px) {
+
+    .creative-cards {
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .creative-section .weekly-container {
+        width: 90%;
+    }
+
+    .creative-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================
+   4 CARDS SIDE CUT FIX
+===================================== */
+
+.creative-section {
+    width: 100%;
+    padding: 40px 0 70px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+/* Main section width */
+
+.creative-section .weekly-container {
+    width: 88%;
+    max-width: 1420px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.creative-section .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+
+.creative-section .section-heading h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #34414c;
+}
+
+
+.creative-section .section-heading button {
+    width: 80px;
+    height: 38px;
+    border: none;
+    background-color: #5c801f;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   FOUR CARDS IN ONE ROW
+===================================== */
+
+.creative-cards {
+    width: 100%;
+
+    display: flex;
+
+    gap: 25px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Normal cards */
+
+.creative-card {
+    width: calc((100% - 75px) / 4);
+
+    min-width: 0;
+
+    height: 430px;
+
+    flex: 0 0 calc((100% - 75px) / 4);
+
+    background-color: white;
+
+    border: 1px solid #dfe3e6;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* Green card */
+
+.envato-green-card {
+    width: calc((100% - 75px) / 4);
+
+    min-width: 0;
+
+    height: 430px;
+
+    flex: 0 0 calc((100% - 75px) / 4);
+
+    padding: 38px 24px 24px;
+
+    background-color: #8be833;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+}
+
+
+/* Image */
+
+.creative-image {
+    width: 100%;
+
+    height: 215px;
+
+    min-height: 215px;
+
+    overflow: hidden;
+}
+
+
+.creative-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Content */
+
+.creative-content {
+    width: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 15px 17px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* Title */
+
+.creative-content h3 {
+    width: 100%;
+
+    margin: 0 0 7px;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* Bottom */
+
+.creative-bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+/* Buttons */
+
+.creative-buttons {
+    display: flex;
+
+    gap: 5px;
+
+    flex-shrink: 0;
+}
+
+
+.creative-buttons .small-cart {
+    width: 40px;
+
+    height: 40px;
+
+    padding: 0;
+}
+
+
+.creative-buttons .live-preview {
+    width: 100px;
+
+    height: 40px;
+
+    padding: 0;
+
+    font-size: 12px;
+}
+
+
+/* Green card heading */
+
+.green-content h2 {
+    margin: 0;
+
+    font-size: 26px;
+
+    line-height: 1.12;
+
+    color: #17231b;
+}
+
+
+/* Green card text */
+
+.green-content p {
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* Green button */
+
+.green-button {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    background-color: #202020;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+
+/* =====================================
+   SMALL LAPTOP FIX
+===================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .creative-section .weekly-container {
+        width: 94%;
+    }
+
+    .creative-cards {
+        gap: 15px;
+    }
+
+    .creative-card,
+    .envato-green-card {
+        width: calc((100% - 45px) / 4);
+
+        flex: 0 0 calc((100% - 45px) / 4);
+    }
+
+    .creative-buttons .live-preview {
+        width: 82px;
+    }
+
+    .creative-buttons .small-cart {
+        width: 36px;
+    }
+
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 850px) {
+
+    .creative-cards {
+        flex-wrap: wrap;
+    }
+
+    .creative-card,
+    .envato-green-card {
+        width: calc((100% - 20px) / 2);
+
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 550px) {
+
+    .creative-card,
+    .envato-green-card {
+        width: 100%;
+
+        flex: 0 0 100%;
+    }
+
+}
+
+/* =====================================
+   TOP UI TEMPLATES
+===================================== */
+
+.ui-templates-section {
+
+    width: 100%;
+
+    padding: 45px 0 70px;
+
+    background-color: #f5f6f7;
+
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Main container */
+
+.ui-main-container {
+
+    width: 96%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Heading */
+
+.ui-heading {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+
+}
+
+
+.ui-heading h2 {
+
+    margin: 0;
+
+    color: #34414c;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+
+
+/* View all button */
+
+.ui-view-btn {
+
+    width: 82px;
+
+    min-width: 82px;
+
+    height: 38px;
+
+    border: none;
+
+    background-color: #5d811e;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+/* =====================================
+   4 CARDS
+===================================== */
+
+.ui-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Card */
+
+.ui-card {
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: 325px;
+
+    background-color: white;
+
+    border: 1px solid #dfe3e6;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Image */
+
+.ui-image {
+
+    width: 100%;
+
+    height: 170px;
+
+    min-height: 170px;
+
+    overflow: hidden;
+
+}
+
+
+.ui-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+/* Content */
+
+.ui-content {
+
+    width: 100%;
+
+    flex: 1;
+
+    padding: 14px 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Product title */
+
+.ui-content h3 {
+
+    width: 100%;
+
+    margin: 0 0 6px;
+
+    color: #3b4650;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* Author */
+
+.ui-content p {
+
+    margin: 0;
+
+    color: #74808a;
+
+    font-size: 13px;
+
+}
+
+
+/* Bottom */
+
+.ui-card-bottom {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+}
+
+
+/* Price */
+
+.ui-card-bottom h4 {
+
+    margin: 0 0 8px;
+
+    color: #3b4650;
+
+    font-size: 20px;
+
+}
+
+
+/* Rating */
+
+.ui-rating {
+
+    color: #e5a600;
+
+    font-size: 17px;
+
+}
+
+
+.ui-rating span {
+
+    color: #77828b;
+
+    font-size: 12px;
+
+}
+
+
+/* Sales */
+
+.ui-card-bottom small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #77828b;
+
+    font-size: 12px;
+
+}
+
+
+/* Cart */
+
+.ui-cart-btn {
+
+    width: 44px;
+
+    height: 44px;
+
+    border: 1px solid #d2d8dc;
+
+    background-color: white;
+
+    font-size: 16px;
+
+}
+
+
+/* =====================================
+   LAPTOP SCREEN
+===================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .ui-main-container {
+
+        width: 96%;
+
+    }
+
+    .ui-cards {
+
+        gap: 15px;
+
+    }
+
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 850px) {
+
+    .ui-cards {
+
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 550px) {
+
+    .ui-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==================================
+   TWO FEATURE CARDS
+================================== */
+
+/* ==================================
+   TWO FEATURE CARDS
+================================== */
+
+.feature-section{
+    width:96%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:55px 0 45px;
+    box-sizing:border-box;
+}
+
+.feature-cards{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+    box-sizing:border-box;
+}
+
+.feature-card{
+    width:100%;
+    height:215px;
+    display:flex;
+    align-items:center;
+    padding:30px 40px;
+    border-radius:5px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+.dark-feature{
+    background:#202020;
+    color:#fff;
+    box-shadow:0 8px 22px rgba(0,0,0,.15);
+}
+
+.light-feature{
+    background:#fff;
+    color:#2c3d4f;
+    border:1px solid #d9dfe4;
+    box-shadow:0 8px 22px rgba(0,0,0,.10);
+}
+
+/* ==================================
+   POPULAR SEARCHES
+================================== */
+
+/* ==================================
+   POPULAR SEARCHES
+================================== */
+
+
+.popular-searches{
+    width:100%;
+    max-width:1600px;
+    margin:58px auto 0;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.popular-searches h2{
+    margin:0 0 26px;
+    color:#2d3d4e;
+    font-size:23px;
+    font-weight:700;
+}
+
+.search-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    width:100%;
+}
+/* ==================================
+   TABLET
+================================== */
+@media screen and (max-width:1100px){
+
+    .feature-section{
+        width:96%;
+        padding:45px 0;
+    }
+
+    .feature-cards{
+        gap:20px;
+    }
+
+}
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media screen and (max-width:768px){
+
+    .feature-section{
+        width:96%;
+        padding:35px 0;
+    }
+
+    .feature-cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+/* =====================================
+   NEW RELEASES
+===================================== */
+
+.new-releases {
+    width: 100%;
+
+    max-width: 1420px;
+
+    margin: 0 auto 80px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* Heading and View all */
+
+.section-heading {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #2d3b49;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+
+/* View all button */
+
+.view-all-btn {
+    width: 81px;
+
+    height: 40px;
+
+    border: none;
+
+    background-color: #668c20;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.view-all-btn:hover {
+    background-color: #54771a;
+}
+
+
+/* =====================================
+   FOUR CARDS
+===================================== */
+
+.release-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 32px;
+
+    box-sizing: border-box;
+}
+
+
+/* Individual card */
+
+.release-card {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 297px;
+
+    background-color: white;
+
+    border: 1px solid #e2e5e7;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Card image */
+
+.card-image {
+    width: 100%;
+
+    height: 168px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+
+/* Card 1 */
+
+.hitup-image {
+    background:
+        linear-gradient(
+            130deg,
+            #5030a5,
+            #9675db,
+            #f0b44f
+        );
+}
+
+
+/* Card 2 */
+
+.inumaki-image {
+    background:
+        linear-gradient(
+            130deg,
+            #161b1b,
+            #4b4b4a,
+            #202020
+        );
+}
+
+
+/* Card 3 */
+
+.airvora-image {
+    background:
+        linear-gradient(
+            130deg,
+            #d9d5a4,
+            #313c32,
+            #9c9972
+        );
+}
+
+
+/* Card 4 */
+
+.fotisx-image {
+    background:
+        linear-gradient(
+            130deg,
+            #e7e5d9,
+            #f8f7f0,
+            #d1d9d4
+        );
+
+    color: #304b45;
+}
+
+
+/* Image text */
+
+.template-logo {
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.template-text {
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.inumaki-name {
+    position: absolute;
+
+    left: 50%;
+
+    top: 52%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.image-circle {
+    position: absolute;
+
+    right: 25px;
+
+    bottom: 17px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #475260;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.image-arrow {
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 30px;
+
+    color: white;
+}
+
+
+/* =====================================
+   CARD DETAILS
+===================================== */
+
+.release-details {
+    height: 129px;
+
+    padding: 13px 17px 14px;
+
+    box-sizing: border-box;
+}
+
+
+.release-details h3 {
+    width: 100%;
+
+    margin: 0 0 6px;
+
+    color: #3b4650;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.author {
+    margin: 0;
+
+    color: #7b858d;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* Bottom section */
+
+.card-bottom {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-top: 13px;
+}
+
+
+.card-bottom h4 {
+    margin: 0;
+
+    color: #37434e;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* Card buttons */
+
+.card-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.cart-button {
+    width: 42px;
+
+    height: 43px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d5d9dc;
+
+    color: #59636b;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+.preview-button {
+    width: 107px;
+
+    height: 43px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #4d8cac;
+
+    color: #35647d;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.preview-button:hover {
+    background-color: #4d8cac;
+
+    color: white;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .release-cards {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media screen and (max-width: 650px) {
+
+    .popular-searches,
+    .new-releases {
+        padding: 0 20px;
+    }
+
+
+    .release-cards {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    .search-buttons {
+        gap: 10px;
+    }
+
+
+    .search-buttons button {
+        min-width: auto;
+
+        padding: 0 20px;
+    }
+
+}
+
+
+/* =========================================
+   MAIN PAGE WIDTH – ALL SECTIONS SAME
+========================================= */
+
+.main-container,
+.content-container,
+.page-container,
+.cards-container,
+.promo-container {
+    width: 100%;
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TOP 4 CARDS – EQUAL ALIGNMENT
+========================================= */
+
+.cards-grid,
+.products-grid,
+.product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.card,
+.product-card{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+/* ==================================
+   TWO FEATURE CARDS
+================================== */
+
+.feature-cards-section {
+    width: calc(100% - 200px);
+    max-width: 1420px;
+
+    margin: 58px auto 55px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px;
+
+    box-sizing: border-box;
+}
+
+
+/* Common Card */
+
+.feature-card {
+    width: 100%;
+    height: 215px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px 28px;
+
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* Left Black Card */
+
+.feature-card-dark {
+    background-color: #202020;
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Right White Card */
+
+.feature-card-light {
+    background-color: #ffffff;
+
+    border: 1px solid #e1e4e8;
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Icon */
+
+.feature-icon {
+    width: 108px;
+    height: 108px;
+
+    min-width: 108px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 27px;
+
+    border-radius: 42% 58% 50% 45%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2bd4,
+            #4724a8,
+            #e92c70
+        );
+
+    font-size: 48px;
+
+    box-shadow:
+        0 8px 15px rgba(94, 41, 178, 0.28);
+}
+
+
+/* Text Area */
+
+.feature-content {
+    min-width: 0;
+}
+
+
+/* Heading */
+
+.feature-content h2 {
+    margin: 0 0 17px;
+
+    font-size: 29px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: 0;
+
+    color: #26374a;
+}
+
+
+/* Dark Card Heading */
+
+.feature-card-dark .feature-content h2 {
+    color: #ffffff;
+}
+
+
+/* Browse Link */
+
+.feature-content a {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #78818a;
+
+    font-size: 17px;
+
+    text-decoration: none;
+}
+
+
+/* Arrow */
+
+.feature-content a span {
+    font-size: 28px;
+
+    line-height: 1;
+
+    color: #8b939a;
+}
+
+
+/* Hover */
+
+.feature-content a:hover {
+    color: #587d20;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .feature-cards-section {
+        width: calc(100% - 80px);
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .feature-card {
+        height: 210px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .feature-cards-section {
+        width: calc(100% - 30px);
+
+        margin-top: 35px;
+
+        gap: 18px;
+    }
+
+    .feature-card {
+        height: auto;
+
+        min-height: 190px;
+
+        padding: 25px 20px;
+    }
+
+    .feature-icon {
+        width: 75px;
+        height: 75px;
+
+        min-width: 75px;
+
+        margin-right: 18px;
+
+        font-size: 34px;
+    }
+
+    .feature-content h2 {
+        font-size: 22px;
+    }
+
+    .feature-content a {
+        font-size: 15px;
+    }
+}
+
+/* ==================================
+   POPULAR SEARCHES
+================================== */
+
+.popular-searches{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto 65px;
+    padding:0 25px;
+    box-sizing:border-box;
+}
+
+/* Heading */
+
+.popular-searches h2{
+    margin:0 0 24px;
+    color:#26374a;
+    font-size:23px;
+    font-weight:700;
+    line-height:1.3;
+}
+
+/* Buttons Container */
+
+.search-buttons{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:15px;
+    box-sizing:border-box;
+}
+
+/* Individual Button */
+
+.search-buttons button{
+    min-width:100px;
+    height:43px;
+    padding:0 28px;
+    border:1px solid #d7dce1;
+    border-radius:24px;
+    background:#fff;
+    color:#334150;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 2px 5px rgba(0,0,0,.05);
+    transition:.2s;
+}
+
+/* Different Widths */
+
+.search-buttons button:nth-child(3){
+    min-width:132px;
+}
+
+.search-buttons button:nth-child(5){
+    min-width:145px;
+}
+
+.search-buttons button:nth-child(8){
+    min-width:125px;
+}
+
+.search-buttons button:nth-child(9){
+    min-width:132px;
+}
+
+.search-buttons button:nth-child(10){
+    min-width:145px;
+}
+
+.search-buttons button:nth-child(12){
+    min-width:128px;
+}
+
+/* Hover */
+
+.search-buttons button:hover{
+    background:#5d7f20;
+    color:#fff;
+    border-color:#5d7f20;
+}
+
+/* Tablet */
+
+@media(max-width:1000px){
+
+    .popular-searches{
+        width:100%;
+        padding:0 20px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .popular-searches{
+        width:100%;
+        padding:0 15px;
+        margin-bottom:40px;
+    }
+
+    .popular-searches h2{
+        font-size:21px;
+    }
+
+    .search-buttons{
+        gap:10px;
+    }
+
+    .search-buttons button{
+        min-width:auto;
+        height:40px;
+        padding:0 20px;
+        font-size:12px;
+    }
+
+}
+/* =========================================
+   NEW RELEASES SECTION
+========================================= */
+
+.new-releases-section{
+    width:96%;
+    max-width:1600px;
+    margin:60px auto;
+    box-sizing:border-box;
+}
+
+
+/* Heading and View All */
+
+.new-releases-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.new-releases-header h2 {
+    margin: 0;
+
+    color: #26374a;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* View All Button */
+
+.view-all-btn {
+    width: 80px;
+    height: 34px;
+
+    border: none;
+
+    background-color: #607f24;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border-radius: 2px;
+}
+
+
+.view-all-btn:hover {
+    background-color: #4d691a;
+}
+
+
+/* Four Cards */
+
+.new-releases-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 32px;
+
+    box-sizing: border-box;
+}
+
+
+/* Card */
+
+.release-card {
+    width: 100%;
+
+    min-width: 0;
+
+    background-color: white;
+
+    border: 1px solid #e1e4e7;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Image */
+
+.release-image {
+    width: 100%;
+    height: 170px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #e8ebed;
+}
+
+
+.release-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Carousel Arrows */
+
+.carousel-arrow {
+    width: 34px;
+    height: 48px;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background-color:
+        rgba(255, 255, 255, 0.86);
+
+    color: #58636c;
+
+    font-size: 29px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+
+.carousel-left {
+    left: 0;
+
+    border-radius:
+        0 5px 5px 0;
+}
+
+
+.carousel-right {
+    right: 0;
+
+    border-radius:
+        5px 0 0 5px;
+}
+
+
+.carousel-arrow:hover {
+    background-color: white;
+}
+
+
+/* Details */
+
+.release-details {
+    padding: 15px 16px 17px;
+
+    box-sizing: border-box;
+}
+
+
+.release-details h3 {
+    width: 100%;
+
+    margin: 0 0 6px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #3a4652;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.release-author {
+    margin: 0 0 15px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #77818a;
+
+    font-size: 13px;
+}
+
+
+/* Price and Buttons */
+
+.release-bottom {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.release-price {
+    color: #344250;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.release-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+}
+
+
+/* Cart */
+
+.cart-button {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #d5dade;
+
+    background-color: white;
+
+    color: #505b64;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+/* Live Preview */
+
+.live-preview-button {
+    width: 106px;
+    height: 42px;
+
+    border: 1px solid #4c89a9;
+
+    background-color: white;
+
+    color: #376b87;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.live-preview-button:hover {
+    background-color: #edf6fa;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:1200px){
+
+    .new-releases-section{
+        width:96%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+ .new-releases-section{
+    width:96%;
+}
+
+    .new-releases-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .release-image {
+        height: 190px;
+    }
+
+    .release-details h3 {
+        font-size: 14px;
+    }
+}
+/* ==================================
+   RISING STARS
+================================== */
+
+.rising-stars{
+    width:100%;
+    max-width:1600px;
+    margin:55px auto;
+    padding:0 25px;
+    box-sizing:border-box;
+}
+
+.rising-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.rising-header h2{
+    margin:0;
+    font-size:23px;
+    font-weight:700;
+    color:#2d3d4b;
+}
+
+.rising-view-btn{
+    width:80px;
+    height:34px;
+    background:#64891e;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+}
+
+.rising-view-btn:hover{
+    background:#557719;
+}
+
+.rising-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.rising-card{
+    background:#fff;
+    border:1px solid #dfe4e7;
+    border-radius:4px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.rising-card-image{
+    width:100%;
+    height:170px;
+    overflow:hidden;
+}
+
+.rising-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.rising-card-details{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+}
+
+.rising-card-details h3{
+    margin:0;
+    font-size:16px;
+    line-height:22px;
+    color:#344554;
+    height:44px;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+}
+
+.rising-author{
+    margin:8px 0 15px;
+    font-size:13px;
+    color:#77838c;
+}
+
+.rising-card-footer{
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.rising-price-box h4{
+    margin:0;
+    font-size:22px;
+    color:#374957;
+}
+
+.rising-price-box p{
+    margin:4px 0 0;
+    font-size:13px;
+    color:#7b8790;
+}
+
+.rising-buttons{
+    display:flex;
+    gap:6px;
+}
+
+.rising-cart-btn{
+    width:42px;
+    height:42px;
+    border:1px solid #d4dbe0;
+    background:#fff;
+    cursor:pointer;
+}
+
+.rising-preview-btn{
+    height:42px;
+    padding:0 16px;
+    border:1px solid #3d87ad;
+    background:#fff;
+    color:#356f8d;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:600;
+}
+
+.rising-preview-btn:hover{
+    background:#edf6fa;
+}
+
+@media(max-width:1200px){
+
+    .rising-stars{
+        width:100%;
+        padding:0 20px;
+    }
+
+    .rising-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    .rising-stars{
+        width:100%;
+        padding:0 15px;
+    }
+
+    .rising-cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+/* =====================================
+   TOP SELLING - 4 CARDS IN ONE ROW
+===================================== */
+
+.ts-main {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 55px auto;
+    padding: 0 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.ts-heading {
+    width: 100%;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.ts-heading h2 {
+    margin: 0;
+
+    color: #344454;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+.ts-view-btn {
+    width: 80px;
+    height: 34px;
+
+    border: none;
+
+    background: #668b2b;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    flex: 0 0 80px;
+}
+
+
+/* 4 CARDS - ONE ROW */
+
+.ts-four-cards {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    grid-template-rows: auto;
+
+    gap: 22px;
+
+    align-items: stretch;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+}
+
+
+/* Single card */
+
+.ts-card {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    height: 350px;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    background: white;
+
+    border: 1px solid #dfe4e7;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    margin: 0 !important;
+}
+
+
+/* Image */
+
+.ts-image {
+    width: 100%;
+
+    height: 165px;
+
+    flex: 0 0 165px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+
+.ts-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Content */
+
+.ts-content {
+    width: 100%;
+
+    height: 185px;
+
+    padding: 13px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* Title */
+
+.ts-content h3 {
+    height: 42px;
+
+    margin: 0;
+
+    color: #344454;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 21px;
+
+    overflow: hidden;
+}
+
+
+/* Author */
+
+.ts-content > p {
+    height: 18px;
+
+    margin: 4px 0;
+
+    color: #77838d;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* Price */
+
+.ts-content > strong {
+    margin: 2px 0 5px;
+
+    color: #344454;
+
+    font-size: 20px;
+}
+
+
+/* Bottom */
+
+.ts-bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+/* Rating */
+
+.ts-rating {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.ts-rating span {
+    color: #e3a300;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+.ts-rating small {
+    color: #77838d;
+
+    font-size: 10px;
+}
+
+
+.ts-rating p {
+    margin: 3px 0 0;
+
+    color: #77838d;
+
+    font-size: 11px;
+}
+
+
+/* Buttons */
+
+.ts-buttons {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center;
+
+    gap: 4px;
+
+    flex: 0 0 auto;
+}
+
+
+.ts-cart {
+    width: 34px;
+
+    height: 38px;
+
+    padding: 0;
+
+    border: 1px solid #d5dce0;
+
+    background: white;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+.ts-preview {
+    width: 82px;
+
+    height: 38px;
+
+    padding: 0;
+
+    border: 1px solid #3e83a6;
+
+    background: white;
+
+    color: #285f7a;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 900px) {
+
+    .ts-four-cards {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    .ts-main {
+        padding: 0 15px;
+    }
+
+    .ts-four-cards {
+        grid-template-columns:
+            1fr !important;
+    }
+
+}
+
+/* =========================================
+HOT UNDER $48
+========================================= */
+
+.hot48-section{
+    width:100%;
+    max-width:100%;
+    margin:55px auto;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.hot48-header{
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.hot48-header h2{
+    margin:0;
+}
+
+.hot48-view-btn{
+    width:80px;
+    height:36px;
+
+    background:#6b9824;
+    color:#fff;
+
+    border:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+}
+
+.hot48-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.hot48-card{
+    width:100%;
+    background:#fff;
+    border:1px solid #dfe4e7;
+    border-radius:4px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.hot48-image{
+    width:100%;
+    height:210px;
+}
+
+.hot48-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.hot48-content{
+    flex:1;
+    padding:14px 16px;
+    display:flex;
+    flex-direction:column;
+}
+
+.hot48-content h3{
+    margin:0;
+    font-size:14px;
+    line-height:20px;
+    color:#344454;
+    font-weight:700;
+}
+
+.hot48-author{
+    margin:6px 0 10px;
+    color:#77838d;
+    font-size:12px;
+}
+
+.hot48-price{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.hot48-footer{
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.hot48-details{
+    flex:1;
+}
+
+.hot48-stars{
+    color:#e2a300;
+    font-size:15px;
+}
+
+.hot48-stars span{
+    color:#77838d;
+    font-size:11px;
+}
+
+.hot48-details p{
+    margin-top:4px;
+    color:#77838d;
+    font-size:11px;
+}
+
+.hot48-actions{
+    display:flex;
+    gap:5px;
+}
+
+.hot48-cart{
+    width:42px;
+    height:44px;
+    border:1px solid #d5dce0;
+    background:#fff;
+    cursor:pointer;
+}
+
+.hot48-preview{
+    width:120px;
+    height:44px;
+    border:1px solid #3d83a6;
+    background:#fff;
+    color:#285f7a;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .hot48-grid{
+        grid-template-columns:repeat(4,1fr);
+        gap:15px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+    .hot48-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    .hot48-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==================================
+   ALL CATEGORIES
+================================== */
+
+.all-categories-section {
+    width: 100%;
+    padding: 35px 18px 50px;
+
+    background-color: #f5f6f8;
+
+    box-sizing: border-box;
+}
+
+
+/* Main border */
+
+.categories-box {
+    width: 100%;
+    max-width: 1565px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d8dde2;
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.categories-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 30px 45px 25px;
+
+    border-bottom: 1px solid #cfd4d8;
+
+    box-sizing: border-box;
+}
+
+
+.categories-heading h2 {
+    margin: 0;
+
+    color: #3d4853;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Icon */
+
+.category-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #727d86;
+    border-radius: 3px;
+
+    color: #59646d;
+
+    font-size: 18px;
+}
+
+
+/* Main categories */
+
+.categories-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+    column-gap: 35px;
+
+    padding: 8px 35px 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Category item */
+
+.category-item {
+    padding: 22px 16px;
+
+    color: #59646e;
+
+    font-size: 16px;
+
+    border-bottom:
+    1px solid #e0e4e7;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================
+   CHECKBOX HIDE
+================================== */
+
+.category-check {
+    display: none;
+}
+
+
+/* Starting lo extra content hide */
+
+.hidden-category-content {
+    display: none;
+}
+
+
+/* Checkbox click ayyaka show */
+
+.category-check:checked
+~ .hidden-category-content {
+
+    display: block;
+
+}
+
+
+/* Extra categories */
+
+.extra-categories {
+    display: grid;
+
+    grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+    column-gap: 35px;
+
+    padding: 0 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* Browse links */
+
+.browse-links {
+    display: flex;
+
+    gap: 35px;
+
+    padding: 28px 45px 24px;
+
+    box-sizing: border-box;
+}
+
+
+.browse-links a {
+    color: #4c5761;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.browse-links a:hover {
+    color: #5a8125;
+}
+
+
+/* ==================================
+   SHOW BUTTON
+================================== */
+
+.show-toggle-area {
+    width: 100%;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top:
+    1px solid #d6dbe0;
+
+    box-sizing: border-box;
+}
+
+
+/* Button */
+
+.show-toggle-btn {
+    min-width: 150px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 18px;
+
+    margin-top: -1px;
+
+    background-color: #ffffff;
+
+    color: #4d5862;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* Starting lo Show less hide */
+
+.show-less-text,
+.show-toggle-btn
+.fa-chevron-up {
+
+    display: none;
+
+}
+
+
+/* Checkbox checked ayyaka
+   Show more hide */
+
+.category-check:checked
+~ .show-toggle-area
+.show-more-text {
+
+    display: none;
+
+}
+
+
+.category-check:checked
+~ .show-toggle-area
+.fa-chevron-down {
+
+    display: none;
+
+}
+
+
+/* Checkbox checked ayyaka
+   Show less show */
+
+.category-check:checked
+~ .show-toggle-area
+.show-less-text {
+
+    display: inline;
+
+}
+
+
+.category-check:checked
+~ .show-toggle-area
+.fa-chevron-up {
+
+    display: inline;
+
+}
+
+
+/* ==================================
+   TABLET
+================================== */
+
+@media screen and
+(max-width: 1000px) {
+
+    .categories-grid,
+    .extra-categories {
+
+        grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media screen and
+(max-width: 650px) {
+
+    .all-categories-section {
+
+        padding:
+        25px 10px 40px;
+
+    }
+
+
+    .categories-heading {
+
+        padding:
+        25px 20px 20px;
+
+    }
+
+
+    .categories-grid,
+    .extra-categories {
+
+        grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+        column-gap: 15px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+
+    .category-item {
+
+        padding: 18px 8px;
+
+        font-size: 14px;
+
+    }
+
+
+    .browse-links {
+
+        gap: 20px;
+
+        padding:
+        25px 20px;
+
+    }
+
+}
+
+/* ==================================
+   ENVATO SUBSCRIPTION BAR ONLY
+================================== */
+
+/* =====================================
+   ENVATO BAR
+===================================== */
+
+.envato-bar {
+    width: 100%;
+    height: 500px;
+    background: #f5eadc;
+    overflow: hidden;
+    padding: 65px 0;
+    box-sizing: border-box;
+}
+
+.envato-bar-container {
+    width: 820px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =====================================
+   LEFT SIDE
+===================================== */
+
+.envato-bar-left {
+    width: 335px;
+    font-family: Arial, sans-serif;
+}
+
+.envato-name {
+    color: #25282a;
+    font-size: 39px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.envato-icon {
+    color: #79ca43;
+    display: inline-block;
+    transform: rotate(-35deg);
+    margin-right: 5px;
+}
+
+.envato-bar-left h1 {
+    margin: 0 0 15px;
+    color: #25282a;
+    font-size: 37px;
+    line-height: 1.02;
+    letter-spacing: -1px;
+}
+
+.envato-bar-left h1 span {
+    color: #a3489d;
+}
+
+.envato-bar-left p {
+    margin: 7px 0;
+    color: #25282a;
+    font-size: 16px;
+}
+
+.envato-text {
+    margin-top: 20px;
+    color: #25282a;
+    font-size: 16px;
+}
+
+.envato-start {
+    width: 165px;
+    height: 57px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #9be35f;
+    color: #202521;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   RIGHT SIDE
+===================================== */
+
+.envato-bar-right {
+    width: 420px;
+    height: 345px;
+
+    display: flex;
+    gap: 7px;
+
+    align-items: flex-start;
+}
+
+.envato-column {
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.second-column {
+    margin-top: 12px;
+}
+
+.third-column {
+    margin-top: -3px;
+}
+
+.fourth-column {
+    margin-top: 13px;
+}
+
+
+/* =====================================
+   COMMON CARD
+===================================== */
+
+.envato-mini-card {
+    width: 100%;
+
+    border: 1px solid #555;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.18);
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* =====================================
+   1 - VIDEOGEN
+   BRIGHT COLORFUL IMAGE
+===================================== */
+
+.envato-mini-card.card-video {
+    height: 120px !important;
+
+    background:
+        linear-gradient(
+            rgba(255, 120, 60, 0.10),
+            rgba(60, 80, 220, 0.10)
+        ),
+        url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+
+    background-color: #e87943 !important;
+}
+
+
+/* =====================================
+   2 - IMAGEGEN
+===================================== */
+
+.envato-mini-card.card-image {
+    height: 128px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   3 - MUSICGEN
+===================================== */
+
+.envato-mini-card.card-music {
+    height: 72px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   4 - GRAPHICSGEN
+===================================== */
+
+.envato-mini-card.card-graphics {
+    height: 132px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   5 - IMAGE EDIT
+===================================== */
+
+.envato-mini-card.card-edit {
+    height: 130px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   6 - VOICEGEN
+===================================== */
+
+.envato-mini-card.card-voice {
+    height: 72px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   7 - FONTS
+===================================== */
+
+.envato-mini-card.card-font {
+    height: 128px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   8 - MOTION GRAPHICS
+===================================== */
+
+.envato-mini-card.card-motion {
+    height: 127px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   9 - VIDEO TEMPLATES
+===================================== */
+
+.envato-mini-card.card-template {
+    height: 75px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   10 - VIDEO
+===================================== */
+
+.envato-mini-card.card-photo {
+    height: 130px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   11 - 3D
+===================================== */
+
+.envato-mini-card.card-3d {
+    height: 125px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+}
+
+
+/* =====================================
+   12 - & MORE
+===================================== */
+
+.envato-mini-card.card-more {
+    height: 73px !important;
+
+    background:
+        url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&w=800&q=95")
+        center / cover no-repeat !important;
+
+    background-color: #e99bb5 !important;
+}
+
+
+/* =====================================
+   LABELS
+===================================== */
+
+.envato-mini-card b,
+.envato-mini-card small {
+    position: absolute;
+
+    top: 6px;
+    left: 6px;
+
+    z-index: 999;
+
+    padding: 3px 5px;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    line-height: normal;
+
+    border-radius: 2px;
+}
+
+
+/* Green labels */
+
+.envato-mini-card b {
+    background: #92e257 !important;
+    color: #182417 !important;
+}
+
+
+/* White labels */
+
+.card-font small,
+.card-motion small,
+.card-template small,
+.card-photo small,
+.card-3d small,
+.card-more small {
+    background: #ffffff !important;
+    color: #333333 !important;
+}
+
+
+/* =====================================
+   FONT TEXT
+===================================== */
+
+.card-font strong {
+    position: absolute;
+
+    top: 30px;
+    left: 9px;
+
+    z-index: 50;
+
+    color: #2864b5;
+
+    font-family: Georgia, serif;
+    font-size: 34px;
+
+    transform: rotate(-7deg);
+}
+
+
+/* =====================================
+   MOTION TEXT
+===================================== */
+
+.card-motion strong {
+    position: absolute;
+
+    left: 7px;
+    bottom: 8px;
+
+    z-index: 50;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .envato-bar {
+        height: auto;
+    }
+
+    .envato-bar-container {
+        width: 90%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+    }
+
+    .envato-bar-right {
+        transform: scale(0.85);
+
+        transform-origin: left top;
+
+        margin-bottom: -50px;
+    }
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+/* =====================================
+   MAIN FOOTER
+===================================== */
+
+.main-footer {
+    width: 100%;
+    background-color: #202020;
+    color: #ffffff;
+
+    margin-top: 0;
+
+    font-family: Arial, sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   TOP FOOTER
+===================================== */
+
+.footer-top {
+    width: 100%;
+    min-height: 390px;
+
+    padding: 58px 28px 48px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        1fr
+        1.05fr
+        2.25fr
+        1.45fr;
+
+    column-gap: 55px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   FOOTER COLUMNS
+===================================== */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-column h3 {
+    color: #a7a7a7;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin: 0 0 27px;
+}
+
+
+.footer-column a {
+    color: #f0f0f0;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+
+    margin-bottom: 23px;
+
+    white-space: nowrap;
+}
+
+
+.footer-column a:hover {
+    color: #ffffff;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   LONG FOURTH COLUMN
+===================================== */
+
+.footer-envato-links a {
+    white-space: normal;
+}
+
+
+/* =====================================
+   ENVATO BRAND
+===================================== */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+}
+/* Logo wrapper */
+.footer-brand .envato-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: max-content;
+    height: 35px;
+    margin-bottom: 77px;
+    padding: 0;
+    white-space: nowrap;
+    line-height: 1;
+}
+/* Green Envato icon */
+.footer-brand .envato-icon {
+    color: #82d044;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+    margin: 0 4px 0 0;
+    padding: 0;
+    transform: rotate(-35deg);
+    vertical-align: baseline;
+}
+/* ENVATO */
+.footer-brand .envato-name {
+    color: #f4f4f4;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* MARKET */
+.footer-brand .market-name {
+    color: #e4e4e4;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* =====================================
+   STATISTICS
+===================================== */
+.footer-brand .footer-stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 62px;
+}
+.footer-brand .stat-box {
+    min-width: 98px;
+}
+.footer-brand .stat-box h2 {
+    color: #e8e8e8;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    white-space: nowrap;
+}
+.footer-brand .stat-box p {
+    color: #9c9c9c;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+}
+/* =====================================
+   BOTTOM FOOTER
+===================================== */
+.footer-bottom {
+    width: 100%;
+    min-height: 180px;
+    border-top: 1px solid #414141;
+    padding: 29px 27px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* =====================================
+   FOOTER MENU
+===================================== */
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-bottom: 15px;
+}
+.footer-menu a {
+    color: #e5e5e5;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+/* =====================================
+   BOTTOM FOOTER TEXT
+===================================== */
+.footer-bottom-left p {
+    color: #a6a6a6;
+    font-size: 15px;
+    margin: 0 0 13px;
+    line-height: 1.35;
+}
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-top: 61px;
+}
+.social-icons a {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #555555;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    background-color: #8b8b8b;
+}
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 1000px) {
+    .footer-top {
+        grid-template-columns:
+            repeat(2, 1fr);
+        row-gap: 45px;
+        column-gap: 35px;
+    }
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+}
+@media (max-width: 600px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        padding: 40px 22px;
+    }
+    .footer-brand {
+        grid-column: span 1;
+    }
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+    .social-icons {
+        padding-top: 0;
+    }
+}
+/* =================================
+   RESPONSIVE
+================================= */
+@media (max-width: 1200px) {
+    .footer-top {
+        grid-template-columns:
+            1fr
+            1fr
+            1fr
+            1.8fr;
+        row-gap: 45px;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .envato-logo {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        padding: 45px 25px;
+        gap: 40px 25px;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        padding: 30px 25px;
+    }
+    .social-icons {
+        padding-top: 30px;
+    }
+    .footer-menu {
+        gap: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    .footer-brand {
+        grid-column: auto;
+    }
+    .footer-stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* Smooth transition */
+.weekly-card,
+.product-card,
+.creative-card,
+.ui-card,
+.release-card,
+.rising-card,
+.ts-card,
+.hot48-card {
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+/* Hover Effect */
+.weekly-card:hover,
+.product-card:hover,
+.creative-card:hover,
+.ui-card:hover,
+.release-card:hover,
+.rising-card:hover,
+.ts-card:hover,
+.hot48-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+/* Feature Cards */
+.feature-card{
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+.feature-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+.weekly-image{
+    width:100%;
+    height:170px;
+    overflow:hidden;
+    border-radius:6px 6px 0 0;
+    background:#fff;
+}
+.weekly-image img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+/* =========================================
+   IMAGE HOVER ICONS
+========================================= */
+.ts-image {
+    position: relative;
+    overflow: hidden;
+}
+/* Image */
+.ts-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+/* Dark overlay */
+.image-hover-icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0)
+    );
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+/* Show icons when mouse points image */
+.ts-image:hover .image-hover-icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Individual icon */
+.hover-icon {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+/* Hover individual icon */
+.hover-icon:hover {
+    background-color: #80c41c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+/* Make sure Font Awesome icons are centered */
+.hover-icon i {
+    pointer-events: none;
+}
